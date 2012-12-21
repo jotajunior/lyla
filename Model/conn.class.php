@@ -16,7 +16,7 @@ class Connection extends PDO {
 	function __construct( ) {
 		try {
 			if ( $this->handle == null ) {
-				$dbh = parent::__construct( "mysql:dbname=jotaj896_lyla;host=127.0.0.1" , 'jotaj896_lyla' , 'eita9898HHjas@&h_' );
+				$dbh = parent::__construct( "mysql:dbname=lyla;host=127.0.0.1" , '' , '' );
 				$this->handle = $dbh;
 				return $this->handle;
 			}
