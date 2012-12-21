@@ -14,6 +14,8 @@ TODO:
 
 - O Facebook desabilitou a utilização de tokens 'eternos'. O máximo que pode ser feito são tokens que duram *muito* tempo (cerca de dois meses). É necessário trabalhar com essa nova realidade, mandando um e-mail para o usuário renovar o token, quando estiver acabando, registrar a timestamp de quando foi registrado e verificar se ainda é válido.
 
+- Melhorar o autoload.php. Utilizei a estrutura de whitelist listando manualmente todos os arquivos a serem inseridos, mas agora creio ser mais inteligente usar uma função que determine uma regra de nomenclatura para os arquivos a serem inseridos. Lembrar de nunca deixar a segurança de lado.
+
 - O layout de algumas páginas de gerenciamento ainda não está pronto.
 
 

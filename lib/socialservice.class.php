@@ -121,8 +121,8 @@ class SocialService // conecta o id do token ao id do desaparecido
 	private function espalharTwitter( $mensagem, $token )
 	{
 		$tmhOAuth = new tmhOAuth(array(
-		  'consumer_key'    => '2KRITU1tWD2tGrsSQRgx7Q',
-		  'consumer_secret' => 'r8huOrXIIBUsL04h6rXNrSdIQQTUjLPvE77LCjXkcHM',
+		  'consumer_key'    => '',
+		  'consumer_secret' => '',
 		  'user_token'      => $token['oauth_token'], 
 		  'user_secret'     => $token['oauth_token_secret'],
 		));
