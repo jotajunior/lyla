@@ -1,0 +1,142 @@
+<?php
+include("autoload.php");
+try
+{
+	Sessao::iniciar();
+	Sessao::areaRestrita('desap');
+}
+catch(Exception $e)
+{
+	echo "Você precisa estar logado para cadastrar fotos.<br />", $e->getMessage(),"<br />";
+}
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Projeto Lyla | Propagando a esperança!</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="View/default.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#cad {
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: #CDB5CD 0.05em 0.05em;
+	color: #363636;
+	padding-bottom: 10px;
+}
+
+#cad td {
+	padding: 5px;
+}
+
+.cad {
+	width: 200px;
+	border: 1px solid black;
+	color: #000000;
+	font-size: 20px;
+	height: 28px;
+}
+
+.cadsub {
+	height: 50px;
+	width: 200px;
+	border: none;
+	background: #473C8B;
+	color: white;
+	text-decoration: bold;
+}
+
+.cadsub:hover {
+	background: #4682B4;
+}
+
+
+        .button {  
+            border: 0px;  
+            background-color: #473C8B;
+	    width: 80px;
+	    height: 30px;
+	    color: white;
+        } 
+
+	.button:hover {
+		background: #4682B4;
+	}
+	</style>
+	
+        <script type="text/javascript">  
+            function abrir() {  
+                var arquivo = document.getElementById("foto[]");  
+                arquivo.click();  
+            }  
+              
+            function atualizar(campoDe, idPara) {  
+                var fileName = document.getElementById(idPara);  
+                fileName.value = campoDe.value;  
+            }  
+  
+            function validarBrowser() {  
+                if(navigator.appName == "Netscape") {  
+                    document.getElementById("fileText").style.display = "none";  
+                    document.getElementById("fileOpener").style.display = "block";  
+                }  
+            }  
+             
+        </script>  
+
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+	<div id="logo">
+		<img src="View/images/lyla.png" />
+	</div>
+	<!-- end div#logo -->
+	<div id="menu">
+		<ul>
+			<li class="active"><a href="#">HOME</a></li>
+			<li><a href="#">O que é?</a></li>
+			<li><a href="#">Quem fez?</a></li>
+			<li><a href="#">Por quê?</a></li>
+		</ul>
+	</div>
+	<!-- end div#menu -->
+</div>
+<div>
+	<div id="page">
+	
+	<div id="cad"><center>
+				<h2>Selecionar</h2><h1><strong> fotos</strong></h1><br />
+			Este é o motivo de existir do Projeto Lyla. Coloque informações verdadeiras, concisas e deixe o sistema agir!<br /><br />
+	<center>
+	<form  method="POST" action="cadFoto.php" enctype="multipart/form-data">
+		Você pode cadastrar no máximo três fotos: <br />
+		<table>
+		<tr><td><input type="file" class="cad" name="foto[]" id="foto[]" /></td></tr>
+		<tr><td><input type="file"  class="cad" name="foto[]" id="foto[]" /></td></tr>
+		<tr><td><input type="file" name="foto[]" class="cad" id="foto[]" /></td></tr>
+		<tr><td><input type="submit" class="cadsub" value="Cadastrar!" /></td></tr></table></form>
+	</center>
+	</div>
+			<!-- end div#content -->
+			<!-- end div#sidebar -->
+			<div style="clear: both; height: 1px"></div>
+		</div>
+	<!-- end div#page -->
+</div>
+<!-- end div#wrapper -->
+<div id="footer-wrapper">
+	<div id="footer">
+		<p id="legal">Copyright &copy; 2011 Projeto Lyla | <a href="http://www.jotajunior.com">Jota Júnior</a>. Todos os direitos reservados.
+	</div>
+</div>
+<!-- end div#footer -->
+</body>
+</html>

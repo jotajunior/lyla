@@ -1,0 +1,112 @@
+.accordion {
+height:420px;
+    list-style:none;   
+    font-size: 16px;
+    line-height: 1.5em;
+    overflow: hidden;
+    padding: 0;
+    -moz-box-shadow:1px 3px 15px #555;
+    -webkit-box-shadow:1px 3px 15px #555;
+    box-shadow:1px 3px 15px #999;
+    /*border-top:2px solid #fff;
+        border-left:2px solid #fff;*/
+}
+.accordion li {
+border-right:1px solid #fff;
+	top: 0;
+	left: 0;
+    float: left;
+    width: 8%;
+    height: 420px;
+    display: block;
+    /*border-right:2px solid #fff;
+        border-bottom:2px solid #fff;*/
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0;
+    -moz-box-shadow:1px 3px 15px #555;
+    -webkit-box-shadow:1px 3px 15px #555;
+    box-shadow:1px 3px 15px #555;
+}
+.accordion h2 {
+	background:#2b2b2b url(../images/background.jpg);
+    padding: 10px 0;
+    opacity: 0.9;
+	filter: alpha(opacity=90);
+    top: 50px;
+    width: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+
+}
+.accordion div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 200px;
+	padding-bottom: 200px;
+	margin-bottom: -200px;
+}
+.accordion div h2 {
+	background:#000;
+    padding: 0;
+    position: static;
+    opacity: 0.9;
+	filter: alpha(opacity=100);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #444;
+    text-align: left;
+    margin: 0px 0px 15px 20px;
+    text-shadow: -1px -1px 1px #ccc;
+    -moz-text-shadow: -1px -1px 1px #ccc;
+    -webkit-text-shadow: -1px -1px 1px #ccc;
+}
+.accordion div h4{
+	background:#2b2b2b url(../images/background.jpg);
+opacity:0.9;
+	padding:10px 20px 0 20px;
+	color:#fff; font-size:18px;}
+.accordion div p {
+	background:#2b2b2b url(../images/background.jpg);
+    line-height: 14px;
+    margin:0px;
+	opacity:0.9;
+	padding:10px 20px 10px 20px;
+	color:#fff;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 1.6em;
+}
+
+
+.accordion div a {
+	display: block;
+    margin: 5px 0 5px 20px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 11px;
+    text-decoration: none;
+    color: #888;
+}
+.accordion div a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+		

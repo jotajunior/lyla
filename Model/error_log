@@ -1,0 +1,2 @@
+[12-Jul-2012 19:31:46] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/jotaj896/public_html/Model/dao.class.php on line 282
+[12-Jul-2012 19:34:17] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/jotaj896/public_html/Model/dao.class.php on line 282
