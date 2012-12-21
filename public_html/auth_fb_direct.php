@@ -7,7 +7,7 @@ require_once( 'autoload.php' );
    }
    
    $app_id = "241602605864512";
-   $app_secret = "591a2226cce7141039631864e0497c6f";
+   $app_secret = "";
    $my_url = "http://jotajunior.net/lyla/auth_fb_direct.php";
    
 
