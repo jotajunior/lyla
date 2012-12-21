@@ -3,8 +3,6 @@ error_reporting(~E_NOTICE);
 include('autoload.php');
 
 
-// INICIAR SESSAO NO ARQUIVO QUE FOR ESPALHAR AS MSGS.  2KRITU1tWD2tGrsSQRgx7Q
-//r8huOrXIIBUsL04h6rXNrSdIQQTUjLPvE77LCjXkcHM
 
 
 class SocialService // conecta o id do token ao id do desaparecido
@@ -100,19 +98,6 @@ class SocialService // conecta o id do token ao id do desaparecido
 		return file_get_contents('http://migre.me/api.txt?url='.trim( urlencode( $url ) ) );
 	}
 
-	/*private function espalharOrkut( $mensagem, $token )
-	{
-		session_start();
-		$_SESSION['oauth_token'] = $token;
-		require_once("activitycreation.php");
-		$orkutApi = new Orkut('www.jotajunior.com', 'rg1oynDE2pLMUT7TqJEuGnzl');
-		$orkutApi->login();
-		$activity = new Activity( $orkutApi );
-		$activity->setTitle( $mensagem[0] );
-		$activity->setBody( $mensagem[1] );
-		$activity->create();
-	}*/
-
 	public function espalharFacebook( $mensagem, $token )
 	{
 		return file_get_contents("https://graph.facebook.com/me/feed?access_token=".$token."&message=".urlencode( $mensagem[0] )."&method=post&picture=".urlencode($mensagem[1]));
@@ -121,7 +106,7 @@ class SocialService // conecta o id do token ao id do desaparecido
 	private function espalharTwitter( $mensagem, $token )
 	{
 		$tmhOAuth = new tmhOAuth(array(
-		  'consumer_key'    => '',
+		  'consumer_key'    => '2KRITU1tWD2tGrsSQRgx7Q',
 		  'consumer_secret' => '',
 		  'user_token'      => $token['oauth_token'], 
 		  'user_secret'     => $token['oauth_token_secret'],
