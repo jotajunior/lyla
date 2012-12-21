@@ -35,7 +35,7 @@ if ( !isset( $_GET['authorize'] ) || $_GET['authorize'] != 1 || !isset( $_GET['f
 
 $tmhOAuth = new tmhOAuth(array(
   'consumer_key'    => '2KRITU1tWD2tGrsSQRgx7Q',
-  'consumer_secret' => 'r8huOrXIIBUsL04h6rXNrSdIQQTUjLPvE77LCjXkcHM',
+  'consumer_secret' => '',
 ));
 
 $here = tmhUtilities::php_self();
