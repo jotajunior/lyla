@@ -7,21 +7,27 @@
 *
 #
 */
-include('autoload.php');
+include($_SERVER["DOCUMENT_ROOT"].'/lyla/autoload.php');
 
-class Connection extends PDO {
+class Connection extends PDO 
+{
 
 	public $handle = null;
 
-	function __construct( ) {
-		try {
-			if ( $this->handle == null ) {
+	function __construct( ) 
+	{
+		try 
+		{
+			if ( $this->handle == null ) 
+			{
 				$dbh = parent::__construct( "mysql:dbname=lyla;host=127.0.0.1" , '' , '' );
 				$this->handle = $dbh;
-				return $this->handle;
 			}
+			return $this->handle;
+			
 		}
-		catch ( PDOException $e ) {
+		catch ( PDOException $e ) 
+		{
 			echo 'Connection failed: ' . $e->getMessage( );
 			return false;
 		}
