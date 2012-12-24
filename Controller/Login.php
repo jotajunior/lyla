@@ -3,7 +3,7 @@
 namespace Controller;
 
 
-class Login extends Controller
+class Login extends \Core\Controller
 {
 	private $campo;
 

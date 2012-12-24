@@ -2,8 +2,13 @@
 
 namespace Controller;
 
-class Voluntario extends Controller
+class Voluntario extends \Core\Controller
 {
+
+	public function index()
+	{
+		echo 11111111;
+	}
 
 	public static function registrar()
 	{

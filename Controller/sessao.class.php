@@ -1,5 +1,6 @@
 <?php
-include('autoload.php');
+
+namespace Controller;
 
 class Sessao // classe para lidar com sessões e métodos estáticos do LoginModel
 {

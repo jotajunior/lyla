@@ -2,7 +2,7 @@
 
 namespace Controller;
 
-class Admin extends Controller
+class Admin extends \Core\Controller
 {
 	public static function listarPendentes( )
 	{

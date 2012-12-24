@@ -2,7 +2,7 @@
 
 namespace Controller;
 
-class Desaparecidos extends Controller
+class Desaparecidos extends \Core\Controller
 {
 	public static function registrar( ) //cadDesap.php
 	{

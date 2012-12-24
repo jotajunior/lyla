@@ -97,7 +97,6 @@ $(document).ready(function() {
   <div class="clear"></div>	
 </div>
 <!---------------------EOF Header-------------------------->
-	
 <div class="clear"></div>
 
 	<div class="clear"></div>
@@ -246,7 +245,6 @@ são o som que essa buzina gera, para avisar o mundo que existe alguém que prec
 		
 
 <!-----------------EOF footer--------------------->
-
 
 <div id="extra2">
 	<div class="extra_main">
