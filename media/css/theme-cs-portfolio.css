@@ -1,0 +1,142 @@
+/*
+	AnythingSlider v1.5.10 cs-portfolio
+	By Curtis Scott (http://www.curtisscott.com/portfolio.html)
+	updated to work with the new themes
+*/
+
+/*** Note: the nav-cs-portfolio.png used for navigation and slideshow buttons uses a semi-transparent png,
+     through which the background color is seen... so colors set will turn out darker than normal ***/
+
+/****** SET COLORS HERE *******/
+/* Default/Acitve State */
+div.anythingSlider-cs-portfolio .thumbNav a, div.anythingSlider-cs-portfolio.activeSlider .thumbNav a {
+
+}
+div.anythingSlider-cs-portfolio .thumbNav a:hover, div.anythingSlider-cs-portfolio .thumbNav a.cur,
+div.anythingSlider-cs-portfolio.activeSlider .thumbNav a:hover, div.anythingSlider-cs-portfolio.activeSlider .thumbNav a.cur {
+}
+div.anythingSlider-cs-portfolio .start-stop, div.anythingSlider-cs-portfolio .start-stop.hover { display:none;
+
+}
+div.anythingSlider-cs-portfolio .start-stop:hover {
+	
+}
+div.anythingSlider-cs-portfolio .start-stop.playing {
+	
+}
+div.anythingSlider-cs-portfolio .start-stop.playing:hover {
+
+}
+
+/* Overall */
+div.anythingSlider-cs-portfolio {}
+div.anythingSlider-cs-portfolio .anythingWindow, div.anythingSlider-cs-portfolio.activeSlider .anythingWindow {
+
+
+}
+/* Navigation Arrows */
+div.anythingSlider-cs-portfolio .arrow {
+	display: block;
+	bottom: 7px; /* this is -18px for IE7 */
+	position: absolute;
+	z-index: 100;
+}
+div.anythingSlider-cs-portfolio .arrow a {
+	display: block;
+	bottom: 0;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	outline: 0;
+	/*background: url(../images/arrows.png) no-repeat;*/
+}
+div.anythingSlider-cs-portfolio .forward { display:none; }
+div.anythingSlider-cs-portfolio .back {display:none; }
+div.anythingSlider-cs-portfolio .forward a { background-position: right top; }
+div.anythingSlider-cs-portfolio .back a { background-position: left top; }
+div.anythingSlider-cs-portfolio .forward a:hover, div.anythingSlider-cs-portfolio .forward a.hover { background-position: right bottom; }
+div.anythingSlider-cs-portfolio .back a:hover, div.anythingSlider-cs-portfolio .back a.hover { background-position: left bottom; }
+
+/* Navigation Links */
+div.anythingSlider-cs-portfolio .anythingControls {
+/*background:url(../images/anything_slider_bg.png) no-repeat;*/
+	/*background:#ffffff repeat-x bottom center;*/
+	
+	height: 50px;
+	margin: 15px auto 50px auto;
+	text-align: center;
+	z-index: 100; margin-left:405px;
+	background-position:center bottom;
+}
+div.anythingSlider-cs-portfolio .thumbNav {
+	float: none;
+	margin: 0;
+	z-index: 100;
+}
+div.anythingSlider-cs-portfolio .thumbNav li {
+	display: inline;
+}
+
+/* change below for all bullet thumb */
+div.anythingSlider-cs-portfolio .thumbNav a, div.anythingSlider-cs-portfolio.activeSlider .thumbNav a {
+	
+	display:inline-block;
+    width:22px;
+    height:22px;
+    background: url(../images/control3.html) no-repeat;
+    text-indent:-9999px;
+    border:0;
+    margin-right:3px;
+    float:left;
+}
+
+div.anythingSlider-cs-portfolio .thumbNav a, div.anythingSlider-cs-portfolio.activeSlider .thumbNav a,
+div.anythingSlider-cs-portfolio .thumbNav a:hover, div.anythingSlider-cs-portfolio .thumbNav a.cur,
+div.anythingSlider-cs-portfolio.activeSlider .thumbNav a:hover, div.anythingSlider-cs-portfolio.activeSlider .thumbNav a.cur {
+
+}
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+div.anythingSlider-cs-portfolio.rtl .thumbNav a { float: right; } /* reverse order of nav links */
+div.anythingSlider-cs-portfolio.rtl .thumbNav { float: left; }    /* move nav link group to left */
+/* div.anythingSlider-cs-portfolio.rtl .start-stop { float: right; } */ /* move start/stop button - in case you want to switch sides */
+
+/* Autoplay Start/Stop button */
+div.anythingSlider-cs-portfolio .start-stop, div.anythingSlider-cs-portfolio .start-stop.hover { display:none;
+	margin: 18px 50px 0 0;
+	padding: 0;
+	display: inline-block;
+	text-align: center;
+	width: 18px;
+	height: 18px;
+	z-index: 100;
+	border: 0;
+}
+div.anythingSlider-cs-portfolio .start-stop, div.anythingSlider-cs-portfolio .start-stop.hover,
+div.anythingSlider-cs-portfolio .start-stop:hover, div.anythingSlider-cs-portfolio .start-stop.playing,
+div.anythingSlider-cs-portfolio .start-stop.playing:hover {
+
+}
+
+/*.textSlide{ padding:20px; width:900px;}
+.leftside{ padding-right:20px; float:left;      background:url(images/loading.gif) no-repeat 50% 50%;}
+.rightside{float:left; width:350px; color:#666666;}
+.rightside .anyTitle, .leftside_content .anyTitle{ color:#666666; margin-bottom:3px; margin-top:10px; font-size:24px; font-size:24px; font-weight: 500;
+	letter-spacing:2px;}
+.rightside .view{ color:#ffffff;}
+
+.leftside_content{ float:left; width:350px; text-align:right;}
+.leftside_content .read{ color:#ffffff;}
+.rightside_video{float:right; margin-right:40px; color:#666666;}*/
+
+/* Extra - replace defaults */
+div.anythingSlider-cs-portfolio {
+	padding: 0 0px 50px 0;
+}
+
+/* text indent moved to span inside "a", for IE7; apparently, a negative text-indent on an "a" link moves the link as well as the text */
+div.anythingSlider-cs-portfolio .arrow a span, div.anythingSlider-cs-portfolio .thumbNav a span, div.anythingSlider-cs-portfolio .start-stop span {
+	display: none;
+	line-height: 1px; /* needed for IE7 */
+	text-indent: -9999px;
+}
