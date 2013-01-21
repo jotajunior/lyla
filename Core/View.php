@@ -13,7 +13,9 @@ class View
 	{
 		if(! $viewName)
 		{
-			$viewName = strtolower(str_replace('View\\', '', get_class($this)));
+			$viewName = strtolower(
+				str_replace(array('View\\', '\\'), array('', '/'), get_class($this))
+			);
 		}
 		
 		$this->fileName = 'templates/'.$viewName.'.php';
@@ -26,7 +28,7 @@ class View
 	
 	public function __get($index)
 	{
-		return $this->data[$index];
+		return isset($this->data[$index]) ? $this->data[$index] : NULL;
 	}
 	
 	public function __set($index, $value)
@@ -34,7 +36,7 @@ class View
 		$this->data[$index] = $value;
 	}
 	
-	public function render($auto = true)
+	public function render()
 	{
 		ob_start();
 		
@@ -52,17 +54,11 @@ class View
 		
 		include $this->fileName;
 		
-		$view = ob_get_contents();
+		$content = ob_get_contents();
 		
 		ob_end_clean();
 		
-		if($auto)
-		{
-			echo $view;
-			return;
-		}
-		
-		return $view;
+		return $content;
 	}
 	
 	public function __toString()

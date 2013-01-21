@@ -10,23 +10,23 @@
 		<link rel="stylesheet" type="text/css" href="colorpicker/css/layout.css"/>
 
 		<!-- important stylesheets -->
-		<link rel="stylesheet" href="css/superfish.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="media/css/superfish.css" type="text/css" media="all" />
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold" type="text/css" />
-		<link rel="stylesheet" href="css/default.css" type="text/css" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="css/pascal.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<link rel="stylesheet" href="media/css/default.css" type="text/css" />
+		<link rel="stylesheet" href="media/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="media/css/nivo-slider.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="media/css/pascal.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="media/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 
 		<!-- important javascripts -->
-		<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-		<script src="js/superfish.js" type="text/javascript"></script>
-		<script src="js/supersubs.js" type="text/javascript"></script>
-		<script src="js/hoverIntent.js" type="text/javascript"></script>
-		<script type="text/javascript" src="js/carousel.js"></script>
-		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="jquery/jquery.cycle.all.latest.js"></script>
+		<script src="media/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="media/js/superfish.js" type="text/javascript"></script>
+		<script src="media/js/supersubs.js" type="text/javascript"></script>
+		<script src="media/js/hoverIntent.js" type="text/javascript"></script>
+		<script src="media/js/carousel.js" type="text/javascript"></script>
+		<script src="media/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+		<script src="media/js/script.js" type="text/javascript"></script>
+		<script src="media/jquery/jquery.cycle.all.latest.js" type="text/javascript"></script>
 
 		<!-- colorpicker script -->
 		<script type="text/javascript" src="colorpicker/js/eye.js"></script>
@@ -52,7 +52,7 @@
 				<!--<div class="head">-->
 				<!---------------Begin Logo----------------------------------->
 				<div class="span3 logo">
-					<h1><a href="index.php"><img src="images/logonew.png" alt="Logo" /></a></h1>
+					<h1><a href="index.php"><img src="media/img/logonew.png" alt="Logo" /></a></h1>
 				</div>
 				<!---------------End Logo------------------------------------->
 					
@@ -76,10 +76,10 @@
 				<div class="span6 extra_left">© 2012. Projeto LYLA</div>
 				<div class="extra_right">
 					<ul class="social">
-						<li><a href="#"><img src="images/facebook-logo-square.png" width="32" height="32" alt="facebook" /></a></li>
-						<li><a href="#"><img src="images/twitter-bird3-square.png" alt="twitter" width="32" height="32"/></a></li>
-						<li><a href="#"><img src="images/rss-cube.png" width="32" height="32" alt="rss" /></a></li>
-						<li><a href="#"><img src="images/linkedin-logo-square2.png" width="32" height="32" alt="linkedin" /></a></li>	
+						<li><a href="#"><img src="media/img/facebook-logo-square.png" width="32" height="32" alt="facebook" /></a></li>
+						<li><a href="#"><img src="media/img/twitter-bird3-square.png" alt="twitter" width="32" height="32"/></a></li>
+						<li><a href="#"><img src="media/img/rss-cube.png" width="32" height="32" alt="rss" /></a></li>
+						<li><a href="#"><img src="media/img/linkedin-logo-square2.png" width="32" height="32" alt="linkedin" /></a></li>	
 					</ul>
 				</div>
 			</div>

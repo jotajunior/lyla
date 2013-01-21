@@ -13,7 +13,6 @@ class Home extends \Core\Controller
 	{
 		$view = new \View\Home\Index;
 		$this->template->content = $view;
-		Response::instance()->body($this->template);
 	}
 
 }

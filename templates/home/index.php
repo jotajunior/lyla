@@ -2,7 +2,7 @@
 	<br />
 	<center><h1>Destaques</h1></center>
 	<br />
-	<center><img src="images/foto.png" /></center><center>
+	<center><img src="media/img/foto.png" /></center><center>
 	<h5>Dados</h5></center><br />
     <b> Nome</b>: Fulano da Silva Siclano<br />
     <b> Idade</b>: XX anos<br />
@@ -15,11 +15,11 @@
 	<center><h1>É responsável por um<br />desaparecido?</h1></center>
 	<br />
 	<p>Cadastre os dados da pessoa desaparecida no nosso sistema e, após a aprovação do registro, esses dados serão divulgados em redes sociais.<br />
-<center><br /><a href="cadastro.php"><img src="images/cadastrar.png"></a></center></p>
+<center><br /><a href="cadastro.php"><img src="media/img/cadastrar.png"></a></center></p>
 
 <br />
 <?php
-	DesapView::mostrarInfoOnline();
+	//DesapView::mostrarInfoOnline();
 ?>
 </div>
 <div class="row">
@@ -79,11 +79,11 @@
 
 <!--------------------EOF lower_container-------------------------->
 
-<div class="lower_container_border"><img src="images/horizontal-shadow.png" width="940" height="30"  alt="img"/></div>
+<div class="lower_container_border"><img src="media/img/horizontal-shadow.png" width="940" height="30"  alt="img"/></div>
 <!--------------------Begin lower_container-------------------------->		
 
 <div class="lower_container3">
-			<div id="our_mission_img"><img src="images/iMac_225.png"  alt="img" /></div>
+			<div id="our_mission_img"><img src="media/img/iMac_225.png"  alt="img" /></div>
 
 				<div id="our_mission">
 					<h4 class="bottom_margin">Sobre o sistema</h4>
