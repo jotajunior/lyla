@@ -3,10 +3,9 @@
 // Directory of classes
 define('APP', realpath(dirname(__FILE__)) . '/');
 
-define('APP_URI', '/lyla/');
+define('APP_URI', '/');
 
 set_include_path(get_include_path().PATH_SEPARATOR.__DIR__);
-
 
 spl_autoload_register(function($className) {
     $fileParts = explode('\\', ltrim($className, '\\'));

@@ -15,6 +15,12 @@ class View
 		{
 			$viewName = strtolower(str_replace('View\\', '', get_class($this)));
 		}
+                $filter = array_filter(headers_list(), function($item){
+                    return strpos($item,'Content-type' === 0); 
+                });
+                if(!$filter){
+                    header('Content-type: text/html;charset=utf-8');
+                }
 		$viewName = str_replace('\\',\DIRECTORY_SEPARATOR, $viewName);
 		$this->fileName = \APP.'templates/'.$viewName.'.php';
 		if(! file_exists($this->fileName))

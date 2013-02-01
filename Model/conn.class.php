@@ -7,7 +7,7 @@
 *
 #
 */
-include($_SERVER["DOCUMENT_ROOT"].'/lyla/autoload.php');
+include(\APP.'autoload.php');
 
 class Connection extends PDO 
 {
@@ -20,7 +20,12 @@ class Connection extends PDO
 		{
 			if ( $this->handle == null ) 
 			{
-				$dbh = parent::__construct( "mysql:dbname=lyla;host=127.0.0.1" , '' , '' );
+                                $settings = $this->retrieveSettings();
+				$dbh = parent::__construct( 
+                                    $settings->dbhost , 
+                                    $settings->dbuser , 
+                                    $settings->dbpass 
+                                );
 				$this->handle = $dbh;
 			}
 			return $this->handle;
@@ -32,6 +37,13 @@ class Connection extends PDO
 			return false;
 		}
 	}
-
+        
+        protected function retrieveSettings()
+        {
+            $settingsFile = \APP.'lyla.ini';
+            if(file_exists('/etc/lyla/lyla.ini')){
+                $settingsFile = '/etc/lyla/lyla.ini';
+            }
+            return (object) parse_ini_file($settingsFile,true);
+        }
 }
-

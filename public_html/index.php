@@ -5,15 +5,12 @@
 <link rel="icon" href="favicon.ico" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-error_reporting(~E_NOTICE);
+error_reporting(~E_ALL);
 require("autoload.php");
-
-try
-{
-	Sessao::iniciar(1);
+try {
+	Controller\Sessao::iniciar(1);
 						
 ?>
-
 <title>LYLA</title>
 
 <!-- colorpicker stylesheet -->
@@ -118,12 +115,11 @@ divulgados em redes sociais.<br />
 <br />
 <?php
 	DesapView::mostrarInfoOnline();
-}	
-catch( Exception $e )
-{
+} catch( Exception $e ){
 	echo $e->getMessage()."<br />";
 }
 ?>
+aa
 </div>
 <div class="row">
 <div style="text-align:center; width:960px; margin:0 auto; padding-bottom:30px;">
