@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Projeto Lyla | Propagando a esperança!</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="View/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="View/jquery2.js"></script>
+<script type="text/javascript">
+function mostrar( classe )
+{
+	$('#'+classe).slideDown();
+	$('#lihome,#lioque,#liquem,#liporque').removeClass('active');
+	$('#li'+classe).addClass('active');
+}
+function esconderTudoMenos( classe )
+{
+	var classes = new Array();
+	classes[0] = 'oque';
+	classes[1] = 'quem';
+	classes[2] = 'porque';
+	classes[3] = 'home';
+	classes[4] = 'login1';
+	var res = new Array(0);
+	if (classe in {"oque":'', "quem":'', "porque":'', "home":'', "login1":''})
+	{		
+		counter = classes.length - 1;
+		for( i = 0; i <= counter; i++ )
+		{
+			if( classes[i] != classe )
+			{
+				res.push('#'+classes[i]);
+				continue;
+			}
+		}
+	}
+	var la = res.join(",");
+	$(la).hide();
+}
+</script>
+<style type="text/css">
+@import "View/gallery.css";
+
+#quem a {
+	font-weight: bold;
+	font-size: 22px;
+	color: #363636;
+	text-shadow: white 0.0em 0.0em;
+	text-decoration: underline;
+}
+
+#quem a:hover {
+	background: #363636;
+	color: white;
+	
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+	<div id="logo">
+		<img src="View/images/lyla.png" />
+	</div>
+	<!-- end div#logo -->
+	<div id="menu">
+		<ul>
+			<li id="lihome" class="active"><a href="javascript:esconderTudoMenos('home');" onclick="javascript:mostrar('home');">HOME</a></li>
+			<li id="lioque"><a href="javascript:esconderTudoMenos('oque');" onclick="javascript:mostrar('oque');">O que é?</a></li>
+			<li id="liporque"><a href="javascript:esconderTudoMenos('porque');" onclick="javascript:mostrar('porque');">Como funciona?</a></li>
+			<li id="liquem"><a href="javascript:esconderTudoMenos('quem');" onclick="javascript:mostrar('quem');">Quem fez?</a></li>
+		</ul>
+	</div>
+	<!-- end div#menu -->
+</div>
+<div>
+	<div id="page">
+		<div id="page-bgtop">
+		<div id="home">
+			<div id="content">
+				<div class="post2">
+							<h2>Sou </h2><h1><strong>voluntário!</strong></h1>
+							<br /><br /><h3>
+							<strong>Muito</strong> obrigado! Você <strong>não</strong> precisa ceder sua senha<br /> nem e-mail, ou fazer qualquer cadastro mais demorado. É só<br /> <strong>clicar abaixo</strong> aceitar um <strong>aplicativo</strong> para sua<br /> conta de <strong>Orkut, Facebook ou Twitter</strong>! <br /></h3>
+							<br /><br />
+							<table class="redes" cellspacing="10"  align="center">
+							<tr>
+								<td><a href="#"><img src="View/images/facebook-icon.png" /></td>
+								<td><a href="#"><img src="View/images/twitter-icon.png" /></td>
+								<td><a href="#"><img src="View/images/orkut-icon.png" /></td>
+							</tr>
+							<tr>
+								<td><a href="#">Cadastrar Facebook</a></td>
+								<td><a href="#">Cadastrar Twitter</a></td>
+								<td><a href="#">Cadastrar Orkut</a></td>
+							</tr>
+							</table>
+				</div>
+			</div>
+			<!-- end div#content -->
+			<div id="sidebar2">
+							<h2>Sou <strong>responsável</strong> de um </h2><h1><strong>desaparecido</strong></h1>
+							<br /><br /><h3>
+		<strong>Cadastre</strong> os dados da pessoa desaparecida no nosso<br /> sistema e, após a <strong>aprovação</strong> do registro, esses dados serão<br /> divulgados em <strong>redes sociais</strong>.</h3><br /><br />
+						<table class="redes" cellspacing="10">
+						<tr><td align="center"><a href="#"><img src="View/images/a.png"/></td></tr>
+						<tr><td align="center"><a href="#">Cadastrar desaparecido</a></td></tr>
+						<tr><td align="center"><a href="javascript:esconderTudoMenos('login1');" onclick="javascript:mostrar('login1');">Alterar dados de desaparecido</a></td></tr>
+						</table>
+					
+			</div></div>
+			<div id="oque">
+				<h1>O que é?</h1><br />
+				O <strong>Projeto Lyla</strong> é, em poucas palavras, um sistema que <strong>divulga dados de pessoas desaparecidas em redes sociais</strong>,<br /> para maximizar as chances de uma identificação.
+				De um lado os <strong>voluntários</strong> entram no site e, com apenas alguns cliques, <br /><strong>cedem</strong> suas contas de rede social. Do outro, <strong>responsáveis</strong> de pessoas desaparecidas <strong>cadastram</strong> os dados da pessoa <br />(incluindo fotos), e <strong>o Lyla conecta</strong> esses dois pontos.<br /><br />
+				Conhece os cartazes que eram pregados nas ruas perguntando por informações? Então, agora eles <strong>estão na Internet!</strong> <br />Não gastam papel, não sujam e são muito mais eficientes. <strong>E é de graça!</strong><br /><br />
+				E a divulgação é feita de uma forma muito <strong>sutil</strong>. No <strong>Facebook</strong> é utilizada uma mensagem no mural, no <strong>Twitter</strong> é feito <br />um tweet e no <strong>Orkut</strong>, uma atividade. São <strong>no máximo duas publicações por dia</strong> em horários muito espaçados, <br />não ficando nada atrelado ao seu perfil e sem ficar importunando seus amigos.<br /><br />
+Parece pouco mas é uma forma <strong>muito eficiente</strong> de divulgar dados, e cada voluntário é <strong>muito</strong> importante!<br /><strong>
+Seja voluntário do Projeto Lyla e propague a esperança!</strong>
+<br /><br /></div>
+		<div id="quem">
+		
+	<h1>Quem fez?</h1><br />
+	Olá, meu nome é <a href="http://www.jotajunior.com" target="_blank">Jota Júnior</a>, tenho 17 anos e sou simplesmente <strong>fascinado por tecnologia</strong>.<br /><br />
+	Idealizei e desenvolvi o Projeto Lyla sozinho, mas não posso dizer que é um <strong>sistema de uma pessoa só</strong>. <br />Vários amigos me incentivaram e <strong>deram força</strong> durante os momentos em que eu desacreditei o potencial do Lyla e <br />me fizeram <strong>seguir em frente, madrugadas e férias adentro</strong>.<br />Sem dúvida eles são parte fundamental do projeto.<br /><br />
+	<strong>E como eu ganho dinheiro com isso?</strong> Eu <strong>não</strong> ganho. Na verdade, eu <i>gastei</i> algum dinheiro <br />(e <i>muito</i> tempo) para ver o Lyla rodando.<br />Imagine agora ver uma vida salva com as linhas de código que eu escrevi? Dinheiro não é <strong>nada</strong> perto disso!<br />Para fazer <strong>contato</strong>, é só clicar no meu nome, ali em cima!<br /><br />
+<strong>E por que o nome é Lyla?</strong> Bem, porque esse é o <strong>nome de uma música</strong> que eu <br />gosto muito, da banda <strong>Oasis</strong>. <i>E também porque eu não consegui pensar num nome melhor</i>.<br /><br />
+	Mas <strong>por que eu <i>fiz</i> isso</strong>, sendo que eu <strong>não</strong> ganho dinheiro nenhum e <strong>nem tenho tempo</strong> livre para tanto?<br /> É simplesmente porque eu <strong><i>amo</i></strong> o que faço. <strong>Excede</strong> a diversão, e definitivamente não é falta do que fazer.<br/> É como uma <strong>necessidade</strong> de desenvolver, uma <strong>vontade incessante</strong> de construir algo.<br /><br />
+E, vamos lá, esta não é uma boa ideia? <strong>Ajude o Projeto Lyla e seja também um voluntário!</strong><br /><br /><br /><strong>Seja voluntário e me ajude nessa caminhada!</strong><br /><br />
+		</div>
+		<div id="login1">
+		<h1>Login</h1><br />
+		Utiliza o <strong>nome</strong> inteiro do desaparecido e a senha que criou no momento do cadastro.<br />
+		<form action="login.php" method="POST"><center>
+		<table>
+		<tr><td>Nome: </td><td><input type="text" name="login" id="login" class="cad" /></td></tr>
+		<tr><td>Senha: </td><td><input type="password" class="cad" name="senha" id="senha" /></td></tr>
+		<tr><td><input type="submit" class="cadsub" value="Entrar" /></td></tr>
+		<input type="hidden" value="desap" id="tipo" name="tipo" />
+		</table></center>
+		</div>
+		<div id="porque">
+<h1>Como funciona?</h1><br />
+<br />
+
+O nosso sistema basicamente <strong>distribui informações</strong>, essa é a chave. Pense no Lyla como uma <strong>buzina</strong>.<br /><br />
+
+<strong>Quem fornece as informações?</strong> Os responsáveis dos desaparecidos.<br />
+Eles cadastram o perfil da pessoa no nosso sistema, e assim são a <strong>energia elétrica</strong> da nossa buzina. <strong>Fornecem</strong> o que precisamos.
+<br /><br />
+Já os <strong>voluntários</strong> são os <strong>veículos</strong> que o sistema utiliza para ter essa <strong>informação distribuída</strong>; eles <br />são o <strong>som</strong> que essa buzina gera, para avisar o mundo que existe alguém que precisa ser localizado.<br />
+          <br />
+E isso é tudo: <strong>pegar informações fornecidas e divulgá-las nos perfis de voluntários</strong>. Sem mais cartazes, sem mais formas<br /> ineficazes e sem um raio de ação grande: é a hora de <strong>utilizar a tecnologia nessa batalha</strong>.<br />
+<br /><br />
+<strong>- Mas é Spam? Vou ficar mandando várias mensagens até a pessoa ser localizada?</strong><br />
+Não. O Projeto Lyla foi arquitetado para ser pertinente e não invasivo.<br />
+Você não ficará mandando mensagens de aviso aos seus amigos, não mandará notificações nem e-mails; <br />será tudo postado no seu perfil de forma muito sutil.<br />
+E, por respeito ao voluntário, serão <u>no máximo 2 (duas) mensagens por dia</u>, em horários muito espaçados.<br />
+<br /><br />
+<strong>- Quais são os meios utilizados?</strong><br />
+No Facebook, é uma <u>mensagem no seu mural</u>;<br />
+No Orkut, é uma <u>atividade</u> (uma daquelas atualizações que aparecem na página inicial)<br />
+Já no Twitter, como não poderia ser diferente, é um <u>tweet</u>.<br />
+<br /><br />
+<strong>- E isso funciona mesmo?</strong><br />
+Visto as formas de divulgação que existem até agora para esse tipo de informação, a ideia de redes <br />sociais é muito boa. Atinge muita gente, é grátis e não atrapalha ninguém.<br /><br />
+
+<strong>- Quero dar dicas para o sistema, ou reportar um erro!</strong><br />
+O meu site está atrelado ao meu nome, na seção 'quem fez?', acima. É só mandar e eu responderei o mais rápido possível.<br /><br />
+E, vamos lá, esta não é uma boa ideia? <strong>Ajude o Projeto Lyla e seja também um voluntário!</strong><br />
+		</div></div>
+			
+			<!-- end div#sidebar -->
+			<div style="clear: both; height: 1px"></div>
+		</div>
+	</div>
+	<!-- end div#page -->
+</div>
+<!-- end div#wrapper -->
+<div id="footer-wrapper">
+	<div id="footer">
+		<p id="legal">Copyright &copy; 2011 Projeto Lyla | <a href="http://www.jotajunior.com">Jota Júnior</a>. Todos os direitos reservados.
+	</div>
+</div>
+<!-- end div#footer -->
+</body>
+</html>

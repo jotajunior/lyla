@@ -1,0 +1,104 @@
+/*
+Skin Name: Pascal Theme
+Skin URI: http://nivo.dev7studios.com
+Skin Type: fixed
+Description: A nice, light skin for the Nivo Slider.
+Version: 1.0
+Author: Gilbert Pellegrom & Pascal Gartner
+Author URI: http://dev7studios.com
+*/
+
+.theme-pascal.slider-wrapper {
+    background: url(../images/nivo_bg2.png) no-repeat; 
+	height:246px; margin:0 auto; width:519px; padding:5px; 
+    position:relative;
+}
+
+.theme-pascal .nivoSlider {
+    position:relative;
+    width:519px;
+    height:246px;
+    background:url(loading.html) no-repeat 50% 50%;
+}
+.theme-pascal .nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+    width:500px; /* Make sure your images are the same size */
+    height:222px; /* Make sure your images are the same size */
+}
+.theme-pascal .nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.theme-pascal .nivo-controlNav {
+
+    width:251px;
+    height:40px;
+    position:absolute;
+    left:130px; /* Tweak this to center bullets */
+    bottom:-62px;
+    padding:8px 0 0 82px;
+    z-index:20;
+	top:225px;
+}
+.theme-pascal .nivo-controlNav a {
+    display:block;
+    width:16px;
+    height:16px;
+    background: url(../images/slider_image/control3.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+    margin-right:3px;
+    float:left;
+}
+.theme-pascal .nivo-controlNav a.active {
+    background-position:0 -16px; margin-right:3px; padding:0;
+}
+
+.theme-pascal .nivo-directionNav a {
+	display:none;
+}
+
+.theme-pascal .nivo-caption {
+	bottom:15%;
+    left:auto;
+    right:0;
+	margin-right:2px;
+    overflow:hidden;
+	max-width:370px;
+	background:transparent;
+	/* change background color of the caption */
+    text-shadow:none;
+    font-family: arial, serif;
+    color:#000;
+	opacity:0.25;
+
+}
+.theme-pascal .nivo-caption h5{ margin-bottom:0px; color:#000; background:#fff; padding:10px 15px; width:auto; }
+.theme-pascal .nivo-caption h6{ margin-bottom:0px; color:#fff; background:#000; padding:10px 15px;}
+
+.theme-pascal .nivo-caption p {
+    color:#cccccc;
+    font-weight:normal;
+	line-height:16px;
+    font-size:14px;
+
+}
+.theme-pascal .nivo-caption a { 
+    color:#333;
+    font-weight:bold;
+
+}
+
+.theme-pascal .ribbon {
+    background:url(ribbon.html) no-repeat;
+    width:111px;
+    height:111px;
+    position:absolute;
+    top:-8px;
+    left:-8px;
+    z-index:300;
+}
