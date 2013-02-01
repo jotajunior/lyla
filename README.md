@@ -16,24 +16,4 @@ Existe também um sistema simples de gerenciamento dos perfis de desaparecidos.
 ToDo
 -----------
 
-- Tive sérios problemas com path no sistema. Transitei por três servers e cada um apresentava um cenário diferente. Resultado: Um 'leve' workaround para passar por cima do problema. Dessa forma, existem dois autoload.php (mas creio que, na situação atual, somente um é referenciado), e ele está bem feio. Preciso arrumar isso. Vários arquivos contêm um 'set_include_path(" .... ");', que deve ser arrumado.
-
-- Por algum motivo, todos os métodos dos controllers estão estáticos. Não lembro porque fiz isso, o código tem 2 anos. Mudar para OO de verdade!
-
-- O Facebook desabilitou a utilização de tokens 'eternos'. O máximo que pode ser feito são tokens que duram *muito* tempo (cerca de dois meses). É necessário trabalhar com essa nova realidade, mandando um e-mail para o usuário renovar o token, quando estiver acabando, registrar a timestamp de quando foi registrado e verificar se ainda é válido.
-
-- Melhorar o autoload.php. Utilizei a estrutura de whitelist listando manualmente todos os arquivos a serem inseridos, mas agora creio ser mais inteligente usar uma função que determine uma regra de nomenclatura para os arquivos a serem inseridos. Lembrar de nunca deixar a segurança de lado.
-
-- O layout de algumas páginas de gerenciamento ainda não está pronto.
-
-
-Outras explicações
----------------------------
-
-Não utilizei nenhum Framework, e está no modelo MVC, apesar de eu não ter integrado nenhuma template engine.  
-Já no Banco de Dados, a tabela que contem as informaçõs dos desaparecidos é `desap`. O arquivo que lida com as requisições de rede social é o lib/socialservice.class.php . O arquivo que contém o algoritmo de distribuição das informações de desaparecidos é lyla/cerebro.class.php. 
-Os arquivos que fazem a coleta de access_tokens são lyla/public_html/auth_fb_direct.php e lyla/public_html/auth_twitter_direct.php  
-
-*Forma de trabalho do sistema:*
- 
-O usuário cede os tokens em auth_fb_direct.php ou auth_twitter_direct.php. O sistema pega o token e coloca no BD. O cerebro.class.php pega os tokens, os desaparecidos e tenta distribuir de forma equilibrada entre eles. Naturalmente, é mais comum existirem mais desaparecidos que tokens, dessa forma o cerebro.class.php não fica importunando o usuário utilizando seu token mil vezes, e sim o utiliza uma vez, cadastra em qual desaparecido parou, e na próxima iteração (horas depois), parte de onde parou, até que todos os desaparecidos sejam cobertos.
+Refatoração total do Projeto Lyla para adequação e padronização dos códigos.
