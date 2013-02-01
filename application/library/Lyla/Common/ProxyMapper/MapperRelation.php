@@ -43,5 +43,4 @@ class MapperRelation
     {
         return $this->childMapper;
     }
-
 }

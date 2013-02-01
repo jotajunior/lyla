@@ -7,12 +7,6 @@ class Recurso
     protected $id;
     protected $nome;
 
-    function __construct($id, $name)
-    {
-        $this->id = $id;
-        $this->nome = $name;
-    }
-
     public function getId()
     {
         return $this->id;

@@ -31,8 +31,8 @@ class Desaparecido extends Mapper
             'tipoFisico' => 'tipo_fisico',
             'cidadeOrigem' => 'cidade_desap',
             'ufOrigem' => 'estado_desap',
-            'contato' => 'contato',            
-//# contatoTelefone: string
+            'contato' => 'contato',
+            //# contatoTelefone: string
             'foto' => 'foto',
             'observacoes' => 'adicionais',
             'ativo' => 'ativo'
@@ -47,6 +47,4 @@ class Desaparecido extends Mapper
     {
         return 'desap';
     }
-
-    
 }

@@ -99,8 +99,8 @@ class Pdo extends Proxy
         $sql = 'INSERT INTO ' . $entity->getRemoteEntity() .
                 '(' . implode(',', array_keys($binding)) . ') VALUES ' .
                 '(:' . implode(',:', array_keys($binding)) . ')';
-        error_log($sql,3,'/var/log/lyla.log');
-        error_log(print_r($binding,1),3,'/var/log/lyla.log');
+        error_log($sql, 3, '/var/log/lyla.log');
+        error_log(print_r($binding, 1), 3, '/var/log/lyla.log');
         $stmt = $this->resource->prepare($sql);
         $result = $stmt->execute($binding);
         $rp = $ro->getProperty('id');
@@ -132,7 +132,7 @@ class Pdo extends Proxy
     public function delete(Mapper $entity, ModelInterface $object)
     {
         $stmt = $this->resource->prepare(
-                "DELETE FROM " . $entity->getRemoteEntity() . " WHERE id = ?"
+            "DELETE FROM " . $entity->getRemoteEntity() . " WHERE id = ?"
         );
         $result = $stmt->execute(array($object->getId()));
         unset($object);
@@ -143,9 +143,10 @@ class Pdo extends Proxy
     public function getAssociated(MapperRelation $relation, $parentId)
     {
         $stmt = $this->resource->prepare(
-                "SELECT {$relation->getChildIdentifier()}
+            "SELECT {$relation->getChildIdentifier()}
                FROM {$relation->getEntity()}
-              WHERE {$relation->getParentIdentifier()} = :identifier");
+              WHERE {$relation->getParentIdentifier()} = :identifier"
+        );
         $stmt->execute(array('identifier' => $parentId));
         $collection = array();
         foreach ($stmt as $each) {
@@ -158,14 +159,16 @@ class Pdo extends Proxy
     public function saveAssociation(MapperRelation $relation, $parentId, array $children)
     {
         $delstmt = $this->resource->prepare(
-                "DELETE FROM {$relation->getEntity()}
-              WHERE {$relation->getParentIdentifier()} = :identifier");
+            "DELETE FROM {$relation->getEntity()}
+              WHERE {$relation->getParentIdentifier()} = :identifier"
+        );
         $result = $delstmt->execute(array('identifier' => $parentId));
         if ($result) {
             $insstmt = $this->resource->prepare(
-                    "INSERT INTO {$relation->getEntity()}
+                "INSERT INTO {$relation->getEntity()}
                  ({$relation->getParentIdentifier()},{$relation->getChildIdentifier()})
-                 VALUES (:parent,:child)");
+                 VALUES (:parent,:child)"
+            );
             foreach ($children as $child) {
                 $insstmt->execute(array('parent' => $parentId, 'child' => $child->getId()));
             }
@@ -179,8 +182,9 @@ class Pdo extends Proxy
     public function deleteAssociation(MapperRelation $relation, $parentId)
     {
         $delstmt = $this->resource->prepare(
-                "DELETE FROM {$relation->getEntity()}
-              WHERE {$relation->getParentIdentifier()} = :identifier");
+            "DELETE FROM {$relation->getEntity()}
+              WHERE {$relation->getParentIdentifier()} = :identifier"
+        );
         $result = $delstmt->execute(array('identifier' => $parentId));
 
         return (bool) $result;

@@ -1,23 +1,28 @@
 <?php
 namespace Lyla\Controller\Rest;
+
 use Respect\Rest\Routable;
 use Leviathan\Service\Locator;
 use Lyla\Data\Desaparecido as data;
 
 class Desaparecido implements Routable
 {
+
     protected $mapper;
+
     public function __construct()
     {
         $this->mapper = Locator::get('mapper:desaparecido');
     }
+
     public function get($id = null)
     {
-        if($id){
+        if ($id) {
             return $this->mapper->find($id);
         }
         return $this->mapper->findAll();
     }
+
     public function post()
     {
         $obj = new Data;

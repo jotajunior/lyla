@@ -99,5 +99,4 @@ abstract class Mapper
 
         return $binding;
     }
-
 }

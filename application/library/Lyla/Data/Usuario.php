@@ -11,16 +11,6 @@ class Usuario
     protected $ativo;
     protected $tipo;
 
-    function __construct($id, $nome, $email, $password, $ativo, $tipo)
-    {
-        $this->id = $id;
-        $this->nome = $nome;
-        $this->email = $email;
-        $this->password = $password;
-        $this->ativo = $ativo;
-        $this->tipo = $tipo;
-    }
-
     public function getId()
     {
         return $this->id;

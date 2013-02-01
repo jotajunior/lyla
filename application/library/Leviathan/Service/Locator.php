@@ -29,7 +29,8 @@ class Locator extends \ArrayObject
         parent::__construct(array(), self::ARRAY_AS_PROPS);
         $this->id = trim($id, self::PATH_TOKEN);
         $this->name = $name ? : trim(
-                        strstr($id, self::PATH_TOKEN), self::PATH_TOKEN
+            strstr($id, self::PATH_TOKEN),
+            self::PATH_TOKEN
         );
         foreach ($array as $property => $value) {
             $value = $this->hydrateNode($property, $value);
@@ -176,8 +177,8 @@ class Locator extends \ArrayObject
             return $obj->newInstanceArgs();
         } catch (\Exception $exception) {
             throw new \Exception(
-            'An Exception was thrown on Object creation: ' .
-            $exception->getMessage()
+                'An Exception was thrown on Object creation: ' .
+                $exception->getMessage()
             );
             $object = false;
         }
