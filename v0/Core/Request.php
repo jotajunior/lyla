@@ -62,5 +62,4 @@ class Request {
 	{
 		return Response::instance();
 	}
-
 }
