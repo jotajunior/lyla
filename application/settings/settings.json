@@ -1,0 +1,21 @@
+{
+    "project": "Lyla",
+    "persistence": {
+        "proxy": {
+            "\\Lyla\\Common\\ProxyMapper\\Driver\\Pdo": {
+                "\\Pdo": {
+                    "dsn": "mysql:host=localhost;dbname=lyla",
+                    "user": "lyla",
+                    "password": "lylalinda"
+                }
+            }
+        }
+    },
+    "mapper": {
+        "desaparecido": {
+            "\\Lyla\\Mapper\\Desaparecido": {
+                "Proxy":":persistence:proxy"
+            }
+        }
+    }
+}

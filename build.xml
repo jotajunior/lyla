@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="Lyla" default="version">
+  <property file="build.properties" />
+  
+  <loadfile property="version" file="VERSION"/>
+  
+  <target name="version">
+      <echo msg="Project ${phing.project.name} v.${version}"/>
+  </target>
+  
+  <target name="clean">
+    <delete dir="${project.basepath}"/>
+  </target>
+  
+  <target name="mkdir">
+    <mkdir dir="${project.basepath}/application/library"/>
+    <mkdir dir="${project.basepath}/application/resources"/>
+    <mkdir dir="${project.basepath}/application/settings"/>
+    <mkdir dir="${project.basepath}/bin"/>
+    <mkdir dir="${project.basepath}/tests"/>
+    <mkdir dir="${project.basepath}/web/js"/>
+    <mkdir dir="${project.basepath}/web/css"/>
+    <mkdir dir="${project.basepath}/web/img"/>
+  </target>
+  
+  
+  <target name="deps">
+    <composer command="install"/>
+  </target>
+
+</project>

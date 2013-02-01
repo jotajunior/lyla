@@ -1,0 +1,419 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+#oque, #quem, #porque, #login1 {
+	display:none;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	text-shadow: #CDB5CD 0.05em 0.05em;
+	color: #363636;
+
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.post2 {
+	border-right: 2px dotted #D3D3D3;
+}
+
+body {
+	background: #FFFFFF url(images/img01.jpg) repeat-x left top;
+	text-align: justify;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+
+
+h1 {
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	font-weight: normal;
+	color: #473C8B;
+	text-shadow: #CDB5CD 0.01em 0.08em;
+}
+
+h2 {
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: normal;
+	text-shadow: #CDB5CD 0.05em 0.05em;
+	color: #363636;
+}
+#cad {
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: #CDB5CD 0.05em 0.05em;
+	color: #363636;
+	padding-bottom: 10px;
+}
+#cad td {
+	padding: 5px;
+}
+
+.cad {
+	width: 300px;
+	border: 1px solid #000000;
+	color: #000000;
+	font-size: 20px;
+}
+.cadsub {
+	height: 50px;
+	width: 200px;
+	border: none;
+	background: #473C8B;
+	color: white;
+	text-decoration: bold;
+}
+
+.cadsub:hover {
+	background: #4682B4;
+}
+
+
+h3 {
+
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #363636;
+}
+
+p, blockquote, ul, ol {
+	margin-bottom: 20px;
+	line-height: 2em;
+}
+
+p {
+}
+
+blockquote {
+}
+
+ul, ol, li {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #F40C42;
+}
+
+a:hover {
+	text-decoration: none;
+	background: #F40C42;
+	color: white;
+}
+
+.redes {
+	margin: 0 auto;
+}
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 140px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+	width: 270px;
+	height: 76px;
+	margin: 0px;
+	padding: 8px 0px 30px;
+}
+
+#logo h1 {
+	margin: 0;
+	padding: 0;
+	text-transform: lowercase;
+	font: normal 46px Georgia, "Times New Roman", Times, serif;
+}
+
+#logo h2 {
+	margin: -4px 0 0 0;
+	padding: 0px 0px 0px 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	font-weight: normal;
+	color: #D9170E;
+}
+
+#logo h2 a {
+	color: #9AA9B1;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #D9170E;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+	width: 610px;
+	height: 90px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0 0 20px;
+	list-style: none;
+	line-height: normal;
+	margin-left: 30px;
+}
+
+#menu li {
+	display: inline;
+	text-align: center;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height: 55px;
+	margin-right: 1px;
+	padding: 35px 20px 0px 20px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: lowercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #B03060;
+}
+
+#menu a:hover, #menu .active a {
+	background: white;
+	border-bottom: 7px solid #473C8B;
+	color: #473C8B;
+}
+
+
+#alterar {
+	margin: 0 auto;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #363636;
+}
+
+
+#login, #senha {
+	width: 200px;
+	border: 1px solid #000000;
+	color: #000000;
+	font-size: 20px;
+}
+
+#alt-submit {
+	height: 30px;
+	width: 100px;
+	border: none;
+	background: #F40C42;
+	color: white;
+	text-decoration: bold;
+}
+
+#alt-submit:hover {
+	background: #FF4500;
+	color: white;
+}
+/* Page */
+
+#page {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#page a {
+	font-size: 15px;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 50%;
+}
+
+#desap {
+	width: 100%;
+}
+.post {
+	background: url(images/img05.jpg) repeat-y left top;
+}
+
+.post-bgtop {
+	background: url(images/img04.jpg) no-repeat left top;
+}
+
+.post-bgbtm {
+	background: url(images/img06.jpg) no-repeat left bottom;
+	padding: 50px 40px 30px 20px;
+}
+
+.post .title {
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+	color: #232F01;
+}
+
+.post .title a {
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 32px;
+	color: #3A3D40;
+}
+
+.post .entry {
+}
+
+
+.post .meta {
+}
+
+.post .more {
+	display: block;
+	width: 115px;
+	height: 32px;
+	padding: 8px 0px 0px 0px;
+	background: url(images/img12.jpg) no-repeat left top;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.post .byline {
+	font-size: 11px;
+	font-style: italic;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 50%;
+	font-size: 11px;
+	background: url(images/img05.jpg) repeat-y left top;
+}
+
+#sidebar-bgtop {
+	background: url(images/img04.jpg) no-repeat left top;
+}
+
+#sidebar-bgbtm {
+	background: url(images/img06.jpg) no-repeat left bottom;
+	padding: 50px 40px 30px 40px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar .meta {
+}
+
+
+#sidebar p {
+	margin: 0;
+	line-height: normal;
+	color: #D4C792;
+}
+
+#sidebar a {
+	border: none;
+	text-decoration: none;
+	color: #F40C42;
+}
+
+#sidebar a:hover {
+	text-decoration: none;
+	background: #F40C42;
+	color: white;
+}
+
+/* Submenu */
+
+#submenu {
+}
+
+/* News */
+
+#news {
+}
+
+#news a {
+	font-size: 85%;
+}
+
+/* Footer */
+
+#footer-wrapper {
+	background: #F7F7F7 url(images/img03.jpg) repeat-x left top;
+	padding: 20px 0px;
+}
+
+#footer {
+	width: 900px;
+	margin: 0 auto;
+	color: #757E82;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: 11px;
+}
+
+#footer a {
+	text-decoration: underline;
+	color: #757E82;
+}
+
+#footer a:hover {
+	text-decoration: none;
+	color: #F90542;
+}
