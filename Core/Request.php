@@ -23,7 +23,10 @@ class Request {
 	
 	public function query()
 	{
-		parse_str($_SERVER['QUERY_STRING'], $query);
+            $queryString = isset($_SERVER['QUERY_STRING']) ?
+                $_SERVER['QUERY_STRING'] :
+                '';
+		parse_str($queryString, $query);
 		$this->query = $query;
 		return $this->query;
 	}

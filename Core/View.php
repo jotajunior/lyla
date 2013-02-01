@@ -15,9 +15,8 @@ class View
 		{
 			$viewName = strtolower(str_replace('View\\', '', get_class($this)));
 		}
-		
-		$this->fileName = 'templates/'.$viewName.'.php';
-		
+		$viewName = str_replace('\\',\DIRECTORY_SEPARATOR, $viewName);
+		$this->fileName = \APP.'templates/'.$viewName.'.php';
 		if(! file_exists($this->fileName))
 		{
 			throw new \Exception('View '.$viewName.' not found!');
