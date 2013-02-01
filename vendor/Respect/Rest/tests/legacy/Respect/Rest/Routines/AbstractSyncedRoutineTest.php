@@ -44,8 +44,8 @@ class AbstractSyncedRoutineTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Respect\Rest\Routines\ParamSynced',$this->object);
         $parameters = $this->object->getParameters();
         $this->assertCount(2, $parameters);
-        $this->assertEquals('userId', $parameters[0]->name);
-        $this->assertEquals('blogId', $parameters[1]->name);
+        $this->assertEquals('userId', $parameters[0]->nome);
+        $this->assertEquals('blogId', $parameters[1]->nome);
         $this->assertInstanceOf('ReflectionParameter', $parameters[0]);
     }
 }

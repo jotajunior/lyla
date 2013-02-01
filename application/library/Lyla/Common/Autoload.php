@@ -1,24 +1,26 @@
 <?php
-
 namespace Lyla\Common;
 
-class Autoload 
+class Autoload
 {
+
     protected static $instance;
-    
+
     protected function __construct()
     {
+        
     }
-    
+
     public function getInstance()
     {
-        if(!self::$instance){
+        if (!self::$instance) {
             self::$instance = new self;
         }
         return self::$instance;
     }
-    
-    public function __invoke($className) {
+
+    public function __invoke($className)
+    {
         $fileParts = explode('\\', ltrim($className, '\\'));
         foreach ($fileParts as $index => $part) {
             $fileParts[$index] = ucfirst($part);
